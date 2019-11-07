@@ -8,7 +8,6 @@ import plotly.graph_objs as go
 
 
 ###### Read in the data
-#df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/gapminder_with_codes.csv')
 hiv = pd.read_csv('resources/hiv_statistics_combined.csv')
 
 
@@ -17,7 +16,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 app.title = 'Global HIV Statistics'
-githublink = 'https://github.com/calijason76'
+githublink = 'https://github.com/calijason76/hiv-statistics'
 sourceurl = 'http://apps.who.int/gho/data/node.main.618?lang=en'
 
 ###### Define the Layout
@@ -68,4 +67,4 @@ def update_figure(selected):
 
 ###### Execute the app
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=false)
