@@ -67,4 +67,4 @@ def update_figure(selected):
 
 ###### Execute the app
 if __name__ == '__main__':
-    app.run_server(debug=false)
+    app.run_server(debug=False)
