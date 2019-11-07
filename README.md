@@ -4,6 +4,6 @@ The included app.py displays a graph comprised of a combined three reports listi
 
 The combined report has been concatenated from the following:
 
-hiv_deaths
-living_with_hiv
-new_infections
+* hiv_deaths
+* living_with_hiv
+* new_infections
