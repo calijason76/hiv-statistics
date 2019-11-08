@@ -15,14 +15,14 @@ hiv = pd.read_csv('resources/hiv_statistics_combined.csv')
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
-app.title = 'Global HIV Statistics 2018'
+app.title = 'Global HIV Statistics for 2018'
 githublink = 'https://github.com/calijason76/hiv-statistics'
 sourceurl = 'http://apps.who.int/gho/data/node.main.618?lang=en'
 
 ###### Define the Layout
 app.layout = html.Div([html.Div([html.H1("Global HIV Statistics for 2018")],
                                 style={'textAlign': "center", "padding-bottom": "30"}),
-                       html.Div([html.Span("Metric to display : ", className="six columns",
+                       html.Div([html.Span("Choose a metric:   ", className="six columns",
                                            style={"text-align": "right", "width": "40%", "padding-top": 5}),
                                  dcc.Dropdown(id="value-selected", value='d_total',
                                               options=[{'label': "Number of Deaths Due to HIV/AIDS", 'value': 'd_total'},
@@ -67,4 +67,4 @@ def update_figure(selected):
 
 ###### Execute the app
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
